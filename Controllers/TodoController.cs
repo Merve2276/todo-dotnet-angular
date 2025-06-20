@@ -56,8 +56,11 @@ namespace todo_dotnet_api.Controllers
 
         // POST: api/todo
         [HttpPost]
-        public async Task<ActionResult<TodoDto>> PostTodo(TodoDto todoDto)
+        public async Task<ActionResult<TodoDto>> PostTodo([FromBody] TodoDto todoDto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var todo = new Todo
             {
                 Title = todoDto.Title,
@@ -74,8 +77,11 @@ namespace todo_dotnet_api.Controllers
 
         // PUT: api/todo/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTodo(int id, TodoDto todoDto)
+        public async Task<IActionResult> PutTodo(int id, [FromBody] TodoDto todoDto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var todo = await _context.Todos.FindAsync(id);
             if (todo == null)
                 return NotFound();
@@ -107,3 +113,5 @@ namespace todo_dotnet_api.Controllers
         }
     }
 }
+
+

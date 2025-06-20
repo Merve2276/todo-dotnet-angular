@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "oegZ4iPaZtWp6tGqXcnXSeKjJJSsRMpLfcz3GlWCe5Uy+QL93ZfmjzIBZfnIGdjNp2mK63xjuGHnE2HpG409Bg==",
+  "dgSpecHash": "Y/dUKZ27SqBQT49HKTCYXvLspYQNIFQ0oqvNCgjODU9Y6KHoAQS3NXWSCkqIjsWokpWcK9CZeqQOJ8Sk8sXPkA==",
   "success": true,
   "projectFilePath": "/home/myavuz/todo_dotnet_api/todo_dotnet_api.csproj",
   "expectedPackageFiles": [
+    "/home/myavuz/.nuget/packages/fluentvalidation/11.11.0/fluentvalidation.11.11.0.nupkg.sha512",
+    "/home/myavuz/.nuget/packages/fluentvalidation.aspnetcore/11.3.1/fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "/home/myavuz/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.11.0/fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "/home/myavuz/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/myavuz/.nuget/packages/microsoft.aspnetcore.openapi/8.0.14/microsoft.aspnetcore.openapi.8.0.14.nupkg.sha512",
     "/home/myavuz/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

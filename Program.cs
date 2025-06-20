@@ -1,3 +1,6 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using todo_dotnet_api.Middleware;
 using Microsoft.EntityFrameworkCore;
 using todo_dotnet_api.Data;
 
@@ -9,20 +12,36 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddControllers();
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+builder.Services.AddValidatorsFromAssemblyContaining<todo_dotnet_api.Validators.TodoDtoValidator>();
+
+builder.WebHost.UseUrls("http://0.0.0.0:5242");
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
+
+app.UseMiddleware<ExceptionMiddleware>();
+
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.Run();
+
+
+
+
+
 
 
