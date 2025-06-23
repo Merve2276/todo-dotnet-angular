@@ -1,6 +1,0 @@
-/home/myavuz/todo_dotnet_api/obj/Debug/net8.0/todo_dotnet_api.csproj.AssemblyReference.cache
-/home/myavuz/todo_dotnet_api/obj/Debug/net8.0/todo_dotnet_api.GeneratedMSBuildEditorConfig.editorconfig
-/home/myavuz/todo_dotnet_api/obj/Debug/net8.0/todo_dotnet_api.csproj.CoreCompileInputs.cache
-/home/myavuz/todo_dotnet_api/obj/Debug/net8.0/todo_dotnet_api.MvcApplicationPartsAssemblyInfo.cs
-/home/myavuz/todo_dotnet_api/obj/Debug/net8.0/todo_dotnet_api.MvcApplicationPartsAssemblyInfo.cache
-/home/myavuz/todo_dotnet_api/obj/Debug/net8.0/todo_dotnet_api.sourcelink.json
